@@ -8,7 +8,7 @@
 			"name": "Debug",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/HabitTracker",
+			"program": "${workspaceFolder}/target/HabitTracker",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",

@@ -372,7 +372,7 @@ all:
 
 # Project target defined by PROJECT_NAME
 $(PROJECT_NAME): $(OBJS)
-	$(CC) -o $(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
+	$(CC) -o target/$(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
 
 # Compile source files
 # NOTE: This pattern will compile every module defined on $(OBJS)
