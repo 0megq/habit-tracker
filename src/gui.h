@@ -44,7 +44,8 @@ typedef struct CellButtonStyle
 } CellButtonStyle;
 
 // Function Declarations
-void DrawCell(const char *text, Vector2 pos, Vector2 size, const CellStyle *style);
-ButtonStatus DrawCellButton(const char *text, Vector2 pos, Vector2 size, CellButtonStyle style, Vector2 lastPosPressed);
+void DrawCell(const char *text, Vector2 pos, Vector2 size, const CellStyle *style, Color textColor);
+ButtonStatus DrawCellButton(const char *text, Vector2 pos, Vector2 size, CellButtonStyle style, Vector2 lastPosPressed, Color textColor);
 ButtonStatus DrawButton(Rectangle rec, Color normal, Color hovered, Color pressed, Vector2 lastPosPressed);
-void DrawTable(char tableData[MAX_ENTRIES][MAX_ENTRY_LENGTH], size_t columns, size_t rows, Vector2 pos, Vector2 cellSize, CellButtonStyle style);
+ButtonStatus DrawTextButton(const char *text, int fontSize, Color textColor, Rectangle rec, Color normal, Color hovered, Color pressed, Vector2 lastPosPressed);
+void DrawTable(char tableData[MAX_ENTRIES][MAX_ENTRY_LENGTH], size_t columns, size_t rows, Vector2 pos, Vector2 cellSize, CellButtonStyle style, Vector2 lastPosPressed);
